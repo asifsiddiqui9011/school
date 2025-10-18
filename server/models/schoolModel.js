@@ -17,7 +17,7 @@ async function createSchoolTable() {
   `;
   try {
     await db.query(createTableSQL);
-    console.log('✅ School table is ready');
+    // console.log('✅ School table is ready');
   } catch (err) {
     console.error('❌ Error creating school table:', err.message);
   }

@@ -9,6 +9,8 @@ function Add() {
 
     })  
 
+    let url = 'https://school-e2op.onrender.com/api'
+
     const dataHandler = (event)=>{ 
        setData((prev)=>({...prev,[event.target.name]:event.target.value}))
     } 
@@ -16,7 +18,7 @@ function Add() {
     const handleSubmit = async (event) => {  
         event.preventDefault();
         try {
-            const response = await fetch('http://localhost:8000/api/school', {
+            const response = await fetch(`${url}/school`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
