@@ -1,0 +1,114 @@
+.card_container{
+    display: flex; 
+    flex-direction: column;
+    max-width: 300px; 
+    /* height: 300px;  */
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px  rgba(0,0,0,0.2);
+    margin: 10px;
+}
+
+.card_img{
+    border-radius: 10px 10px 0px 0px ;
+    background-color: aqua;
+    overflow: hidden; /* Added to prevent overflow */
+    height: 250px;
+    width: 300px;
+} 
+
+.card_img img{
+    height: 100%; /* Changed to 100% to fit the container */
+    width: 100%; /* Changed to 100% to fit the container */
+    object-fit: cover; /* Moved here for better control */
+}
+
+.card_info{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: first baseline;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card_info h3,p{
+    margin: 5px;
+}
+
+.card_actions{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+.card_btn{
+    height: 40px;
+    width: 80px;
+    background-color:#61a5c2 ; 
+    border: none; 
+    color: white;
+    box-shadow: 1px 1px  10px 1px  #01497c3f;
+    border-radius: 25px;
+    margin-right: -20px;
+}
+
+.card_btn:hover{
+  background-color: #05658f;
+}
+
+.card_btn:active{
+    background-color: #0579bc;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61a5c2;
+    color: white;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #05658f;
+}
+
+.popup button:active {
+    background-color: #0579bc;
+}
+
+@media (max-width: 600px) {
+    .popup {
+        width: 95%;
+    }
+}

@@ -1,0 +1,12 @@
+.Home_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    color:#01497c;
+}
+
+.Home_container img{
+    width: 90vw;
+}

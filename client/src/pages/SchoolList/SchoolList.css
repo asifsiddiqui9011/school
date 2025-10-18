@@ -1,0 +1,51 @@
+.SchoolList_container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+    margin: 5px; 
+    flex-direction: column; 
+    width: 97vw; 
+    color: #01497c;
+    margin-top: 100px;
+}
+
+.card_list_container{
+    display: flex; 
+    flex-wrap: wrap;  
+    justify-content: center; 
+    align-items: center;
+} 
+
+.search_container{
+    height: 50px; 
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+} 
+
+.search_container input{
+    width: 45vw; 
+    height: 40px;
+    border: none;
+    border-radius: 25px 0px 0px 25px;
+    padding: 2px 10px ;
+    border: none;
+    box-shadow: 1px 1px  10px 1px  #01497c3f;
+    outline-color: #61a5c2;
+} 
+
+.search_container input:hover{
+    box-shadow: 2px 2px  10px 2px  #01497c70;
+}
+
+.search_container button{
+    height: 90%;
+    width: 100px; 
+    background-color:#61a5c2 ; 
+    border: none; 
+    color: white;
+    box-shadow: 1px 1px  10px 1px  #01497c3f;
+    border-radius: 0px 25px 25px 0px;
+    margin-right: -20px;
+}
